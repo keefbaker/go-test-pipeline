@@ -1,0 +1,15 @@
+on: push
+name: Test everything
+jobs:
+  lint:
+    name: Lint the code
+    runs-on: golang
+    steps:
+    - name: lint
+      run: golint
+  test:
+    name: Check all the tings
+    runs-on: golang
+    steps:
+    - name: run tests
+      run: go test
