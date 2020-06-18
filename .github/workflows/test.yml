@@ -7,7 +7,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Lint Code Base
-      uses: docker://github/super-linter@v1.0.0
+      uses: docker://github/super-linter
       env:
         # VALIDATE_ALL_CODEBASE: false
         VALIDATE_ANSIBLE: false
