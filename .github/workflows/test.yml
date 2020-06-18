@@ -14,9 +14,10 @@ jobs:
         go-version: ${{ matrix.go-version }}
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Install linter
-      run: go get -u golang.org/x/lint/golint
-    - name: Lint
-      run: golint ./...
+    - name: Lint Code Base
+      uses: github/super-linter@v2.0.0
+      env:
+        # VALIDATE_ALL_CODEBASE: false
+        VALIDATE_ANSIBLE: false
     - name: Test
       run: go test ./...

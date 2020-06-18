@@ -15,6 +15,7 @@ func TestMessage(t *testing.T) {
 		{"yES", "Glad to hear it mate!"},
 		{"ayE", "Glad to hear it mate!"},
 		{"Indeed", "Glad to hear it mate!"},
+		{"Yeah", "Glad to hear it mate!"},
 		{"No", "I'm sorry about that!"},
 		{"saUSage", "I'm sorry about that!"},
 		{"inded", "I'm sorry about that!"},
